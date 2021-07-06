@@ -27,3 +27,6 @@ def login():
         return {'status':'OK', 'prn':prn, 'name':name}
     except Exception:
         return {'status':'ERROR'}
+
+if __name__ == '__main__':
+    app.run(threaded=True, port=5000)
