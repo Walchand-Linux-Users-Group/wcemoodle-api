@@ -28,5 +28,11 @@ def login():
     except Exception:
         return {'status':'ERROR'}
 
+@app.route('/',methods = ['GET'])
+def home():
+    return "Working Fine"
+
+
+
 if __name__ == '__main__':
     app.run(threaded=True, port=5000)
