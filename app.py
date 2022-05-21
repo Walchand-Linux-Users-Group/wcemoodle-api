@@ -13,9 +13,9 @@ def login():
         
         s = requests.Session()
 
-        s.get('http://112.133.242.241/moodle/')
+        s.get('http://115.247.20.236/moodle/')
 
-        r = s.post('http://112.133.242.241/moodle/login/index.php',{"username": params["username"],"password": params["password"]})
+        r = s.post('http://115.247.20.236/moodle/login/index.php',{"username": params["username"],"password": params["password"]})
 
         soup = BeautifulSoup(r.text, 'html.parser')
 
